@@ -21,7 +21,7 @@ class cloudera::scm-server::service inherits cloudera::scm-server::params {
   service { $service_name:
     ensure  => running,
     enable  => true,
-    require => [ Package[$package_names], Exec["scm-install-schema"] ]
+    require => [ Package[$package_names], File["/etc/cloudera-scm-server/db.properties"] ]
 ,
   }
 }

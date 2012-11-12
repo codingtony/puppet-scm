@@ -13,8 +13,7 @@
 #  License. 
 # 
 
-class cloudera::scm-server::params ($db_name="cmf", $db_user="cmf", $db_pass,
-                                    $db_admin_user="root", $db_admin_pass=undef) {
+class cloudera::scm-server::params ($db_host="localhost", $db_name="cmf", $db_user="cmf", $db_pass) {
   $package_names = [ "cloudera-manager-server" ]
   $service_name  = "cloudera-scm-server"
 }
