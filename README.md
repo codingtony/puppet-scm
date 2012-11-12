@@ -2,6 +2,8 @@
 
 ## Description
 
+This module is a fork from [http://github.com/cloudera/puppet-scm] project. This in an effort to make the module suitable for publication on Puppet Forge
+
 This module contains four primary classes:
 
 ### cloudera::cdh
@@ -73,9 +75,7 @@ host 'cdh-node' {
  * $server\_port (defaults to "7182"): TCP port to use when connecting to the Cloudera Manager Server
 
 ### cloudera::scm-server::params
-
+ * $db\_host (defaults to "localhost"): Hostname of the MySQL server the Cloudera Manager Server will use
  * $db\_name (defaults to "cmf"): Name of the MySQL database that the Cloudera Manager Server will use
  * $db\_user (defaults to "cmf"): User that the Cloudera Manager Server should use when authenticating to MySQL
  * $db\_pass: Password that the Cloudera Manager Server should use when authenticating to MySQL
- * $db\_admin\_user (defaults to "root"): Name of a user with permission to administer MySQL
- * $db\_admin\_pass (defaults to undef): Password to use when authenticating as $db\_admin\_user.
