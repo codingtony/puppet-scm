@@ -2,7 +2,7 @@
 
 ## Description
 
-This module is a fork of the enterprise3.7 branch of the [http://github.com/cloudera/puppet-scm](Cloudera's puppet-scm project). This in an effort to make the module suitable for publication on Puppet Forge
+This module is a fork of the enterprise3.7 branch of the [Cloudera's puppet-scm project](http://github.com/cloudera/puppet-scm). This in an effort to make the module suitable for publication on Puppet Forge
 
 This module contains four primary classes:
 
